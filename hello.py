@@ -14,7 +14,7 @@ while a < 1000:
 #if else    
 input = int(input("Please enter an integer\n"))
 if input < 1:
-    print(0+" Any negative number is changed to zero")
+    print(" Any negative number is changed to zero")
 elif input > 1 and input < 10:
     print("The number is {}",input)
 else:
@@ -23,8 +23,16 @@ else:
 #for
 
 words =['cat', 'window', 'defenestrate']
-for w in words[:]:
+for w in words[0]:
     if len(w) > 6:
-         words.insert(1, w)
+         words.insert(0, w)
+         print(w)
 
-print(w)
+print(words)
+
+for i in range(len(h)):
+    print(i,h[i])
+
+for i in range(0,100,3):
+    print(i)
+    
