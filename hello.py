@@ -82,5 +82,23 @@ def ask_ok(prompt, retries=4, reminder='Please try again!'):
             print(reminder)
  
 
-ask_def=ask_ok("yeah")
+ask_def=ask_ok("ye")
 print(ask_def)
+
+def f(a, L=[]):
+    L.append(a)
+    return L
+
+print(f(1))
+print(f(2))
+print(f(3))
+
+def fc(a, L=None):
+    if L is None:
+        L = []
+        L.append(a)
+    return L
+
+print(fc(1))
+print(fc(2))
+print(fc(3))
